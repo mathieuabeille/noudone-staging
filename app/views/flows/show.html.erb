@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @flow.user %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @flow.status %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @flow.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @flow.description %>
+</p>
+
+<p>
+  <strong>Backgroundimage:</strong>
+  <%= @flow.backgroundImage %>
+</p>
+
+<p>
+  <strong>Teaser:</strong>
+  <%= @flow.teaser %>
+</p>
+
+<%= link_to 'Edit', edit_flow_path(@flow) %> |
+<%= link_to 'Back', flows_path %>

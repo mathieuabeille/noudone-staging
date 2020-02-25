@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @interaction.user %>
+</p>
+
+<p>
+  <strong>Flow:</strong>
+  <%= @interaction.flow %>
+</p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @interaction.task %>
+</p>
+
+<p>
+  <strong>Batch:</strong>
+  <%= @interaction.batch %>
+</p>
+
+<p>
+  <strong>Interactiontype:</strong>
+  <%= @interaction.interactionType %>
+</p>
+
+<%= link_to 'Edit', edit_interaction_path(@interaction) %> |
+<%= link_to 'Back', interactions_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @image.user %>
+</p>
+
+<p>
+  <strong>Flow:</strong>
+  <%= @image.flow %>
+</p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @image.task %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @image.image %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @image.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @image.description %>
+</p>
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>

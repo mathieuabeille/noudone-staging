@@ -1,0 +1,18 @@
+
+<%= simple_form_for(@video) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.association :user %>
+    <%= f.association :flow %>
+    <%= f.association :task %>
+    <%= f.input :video %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
